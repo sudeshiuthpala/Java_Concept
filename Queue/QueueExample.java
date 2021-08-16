@@ -1,11 +1,11 @@
 public class QueueExample{
-    public static int front=-1,rear=1,max=10;
+    public static int front=-1,rear=-1,max=10;
     static void enqueue(int[] queue,int val){
         System.out.println("dsda!");
         if(rear==max-1){
             System.out.println("queue is overflow!");
         }
-        else if(front==-1 ){
+        else if(front==-1 && rear==-1){
             front=0;
             rear=0;
             //System.out.println("set!");
